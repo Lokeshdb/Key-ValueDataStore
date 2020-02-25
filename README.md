@@ -1,6 +1,14 @@
 # Key-ValueDataStore
 A DataStore which supports Create,Read and Delete
 
+Sample Methods Call for the Read ,Delete and Write Operation:
+
+		DataStoreFunction service= new DataStoreFunction();
+		service.createFunction(key, json, filePath, timetoLiveSeconds);
+		service.readFunction(key,filePath,fileName);
+		service.removeFunction(key, filePath,fileName);
+		
+Parameter Definitions are Given below -- 
 
 		/**
 	 * Create  Function to Create  the data in Datastore. 
